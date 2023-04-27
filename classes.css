@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  background-color: #EBF0F3;
+  --purple: hsl(240, 80%, 89%);
+  --pink: hsl(0, 59%, 94%);
+  --light-bg: hsl(204, 37%, 92%);
+  --light-gray-bg: hsl(0, 0%, 94%);
+  --white: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 7%);
+  --text-gray: hsl(0, 0%, 30%);
+}
+
+body {
+  background: var(--light-bg);
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--dark);
+}
+/*__________________________header_________________________*/
+
+nav{
+  height: 80px;
+  width: 100%;
+  background: #FFFFFF;
+  z-index: 100;
+}
+
+nav .logo{
+  padding: 0;
+  margin-right: 0px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+
+nav li{
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+
+}
+
+nav a{
+  color: #00D1FF;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+
+nav a:hover{
+  color: #F48CBB;
+  transition: .5s;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background: #F48CBB;
+  color: #FFFFFF;
+  font-size: 17px;
+  cursor: pointer;
+  padding:.8rem 3.5rem;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.btn:hover{
+box-shadow: 0 0 10px #fff;
+font-size: 20.8px;
+transition: 0.4s;
+}
+
+.home1 {
+  color: #00D1FF;
+  font-family: 'Inter', sans-serif;
+}
+.about1 {
+  color: #48FF07;
+  font-family: 'Inter', sans-serif;
+}
+.classes1 {
+  color: #FF9C07;
+  font-family: 'Inter', sans-serif;
+}
+.teachers1 {
+  color: #FF0707;
+  font-family: 'Inter', sans-serif;
+}
+.contact1 {
+  color: #EA13BB;
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+/*__________________________main_________________________*/
+
+main .site-title{
+  background: url(./image/cours.png);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+main .site-title .site-back{
+  padding-top: 10rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+main .site-back h3{
+  font-size: 98px;
+  font-family: "Zen Maru Gothic";
+}
+
+
+main .site-back p{
+  font-size: 38px;
+  font-family: "Zen Maru Gothic";
+}
+
+
+/*__________________________post_________________________*/
+
+.title-flex h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Zen Maru Gothic";
+  color: #F48CBB;
+}
+
+.title-flex p {
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--text-gray);
+  font-family: "Zen Maru Gothic";
+}
+
+.description {
+  white-space: wrap;
+  font-family: "Zen Maru Gothic";
+  color: #2B3D9F;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 24px;
+  padding: 24px;
+  flex-wrap: wrap;
+  background-color: #EBF0F3;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+  padding: 24px;
+  background: #fff;
+}
+
+.box-top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.box-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-title {
+  border-left: 3px solid var(--purple);
+  padding-left: 12px;
+}
+
+.user-follow-info {
+  color: #F48CBB;
+}
+
+.button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  padding: 16px;
+  color: #2B3D9F;
+  background: transparent;
+  box-shadow: 0px 0px 0px 1px #2B3D9F;
+  transition: background 0.4s ease;
+}
+
+.button:hover {
+  background: var(--purple);
+}
+
+.fill-one {
+  background: var(--light-bg);
+}
+
+.fill-two {
+  background: var(--pink);
+}
+
+/* RESPONSIVE QUERIES */
+
+@media (min-width: 320px) {
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 460px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 640px) {
+  .box {
+    flex-basis: calc(50% - 12px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 840px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    flex-basis: calc(33.3% - 16px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .box {
+    flex-basis: calc(25% - 18px);
+  }
+}
+
+
+/*__________________________icons_________________________*/
+.icons-container{
+  background: #EBF0F3;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:4.5rem;
+  padding-bottom: 1rem;
+}
+
+.icons-container .cloud-img{
+  margin-top: 19px;
+}
+
+.icons-container .icons{
+  padding: 16px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info p {
+  text-align: center;   
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+
+.icons-container .icons .info h3{
+  color: #2B3D9F;
+  line-height: 36px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  }
+
+
+
+
+/*__________________________tabs_________________________*/
+
+.activ{
+  background-color: #EBF0F3;
+  margin-top: 0px;
+}
+
+.activ .name-tabs h3{
+  font-family: "Zen Maru Gothic";
+    color: #2B3D9F;
+    font-size: 50px;
+    padding: 80px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+  .tab {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 30px;
+    transition: 0.3s;
+    font-size: 24px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #F48CBB;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .tabcontent h3{
+    font-size: 25px;
+    padding: 8px;
+    color: #2B3D9F;
+  }
+
+  .tabcontent p{
+    font-size: 20px;
+    padding: 8px;
+    line-height: 29px;
+  }
+
+  .tabcontent ul{
+    font-size: 20px;
+    padding: 8px;
+    line-height: 29px;
+    margin-left: 66px;
+  }
+
+
+
+
+  /*__________________________footer_________________________*/
+
+.row {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* margin-right: 70px;
+  margin-left: 162px; */
+}
+
+.footer-section {
+background: #A3D4F7;
+padding-bottom: 80px;
+}
+
+.footer-section-row {
+background: #A3D4F7;
+padding: 18px;
+margin-bottom: 50px;
+}
+
+.address {
+padding: 10px;
+display: flex;
+}
+
+.right-text {
+padding-left: 28px;
+}
+
+.right-text h3 {
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #2B3D9F;
+font-size: 23px;
+font-weight: 700;
+}
+
+.right-text p {
+margin: 0px;
+color: #166a84;
+font-size: 20px;
+line-height: 23px;
+}
+
+.footer-title {
+text-transform: uppercase;
+letter-spacing: 2px;
+color: #2B3D9F;
+font-size: 20px;
+margin-bottom: 23px;
+font-weight: 700;
+position: relative;
+margin-top: 51px;
+}
+/* .footer-title span::before {
+content: "";
+position: absolute;
+right: 0px;
+bottom: 0px;
+width: 117px;
+height: 2px;
+background-color: #f7bb07;
+} */
+
+.footer-title-text {
+z-index: 999;
+position: relative;
+}
+
+
+.quick-link-list {
+list-style-type: none;
+padding: 0px;
+}
+
+.quick-link-list li a {
+color: #3a5876;
+margin-bottom: 8px;
+display: block;
+}
+
+.footer-section-bottom {
+background: #24829f;
+padding: 17px 0px;
+}
+
+.footer-bottom-left p {
+margin: 0px;
+color: #fff;
+}
+
+.footer-bottom-right p {
+margin: 0px;
+color: #fff;
+text-align: right;
+}
+
+
+
+.title-transparent {
+opacity: 0 !important;
+}
+
+#social {
+margin: 20px 10px;
+text-align: center;
+}
+
+.smGlobalBtn {
+/* global button class */
+display: inline-block;
+position: relative;
+cursor: pointer;
+width: 50px;
+height: 50px;
+border: 2px solid #ddd;
+/* add border to the buttons */
+box-shadow: 0 3px 3px #999;
+padding: 0px;
+text-decoration: none;
+text-align: center;
+color: #fff;
+font-size: 22px;
+font-weight: normal;
+line-height: 2em;
+border-radius: 27px;
+-moz-border-radius: 27px;
+-webkit-border-radius: 27px;
+}
+/* facebook button class*/
+
+.facebookBtn {
+background: #4060A5;
+}
+
+.facebookBtn:before {
+/* use :before to add the relevant icons */
+font-family: "FontAwesome";
+content: "\f09a";
+/* add facebook icon */
+}
+
+.facebookBtn:hover {
+color: #4060A5;
+background: #fff;
+border-color: #4060A5;
+/* change the border color on mouse hover */
+}
+/* twitter button class*/
+
+.twitterBtn {
+background: #00ABE3;
+}
+
+.twitterBtn:before {
+font-family: "FontAwesome";
+content: "\f099";
+/* add twitter icon */
+}
+
+.twitterBtn:hover {
+color: #00ABE3;
+background: #fff;
+border-color: #00ABE3;
+}
+/* google plus button class*/
+
+.googleplusBtn {
+background: #e64522;
+}
+
+.googleplusBtn:before {
+font-family: "FontAwesome";
+content: "\f0d5";
+/* add googleplus icon */
+}
+
+.googleplusBtn:hover {
+color: #e64522;
+background: #fff;
+border-color: #e64522;
+}
+
+/* youtube button class */
+
+.youtubeBtn {
+background: #bf1d23;
+}
+
+.youtubeBtn:before {
+font-family: "FontAwesome";
+content: "\f167";
+/* add linkedin icon */
+}
+
+.youtubeBtn:hover {
+color: #bf1d23;
+background: #fff;
+border-color: #bf1d23;
+}
+
+/* tumblr button class*/
+
+.tumblrBtn {
+background: #3a5876;
+}
+
+.tumblrBtn:before {
+font-family: "FontAwesome";
+content: "\f173";
+/* add tumblr icon */
+}
+
+.tumblrBtn:hover {
+color: #3a5876;
+background: #fff;
+border-color: #3a5876;
+}
+
+.subscribe {
+width: 100%;
+border-radius: 0px;
+background: #24829f;
+border: 1px solid #6ac5e1;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 600;
+}
+
+
+.btn3{
+  display: inline-block;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  background: #24829f;
+  color: #FFFFFF;
+  font-size: 17px;
+  cursor: pointer;
+  padding:.8rem 2.5rem;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.btn3:hover{
+box-shadow: 0 0 10px #fff;
+font-size: 20.8px;
+transition: 0.4s;
+}

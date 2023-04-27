@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="./signup.css">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="hero">
+        <div class="from-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <a class="fas fa-facebook" href="https://www.facebook.com/artlabAlmaty"></a>
+                <a class="fas fa-twitter"href="https://twitter.com/artlab_vandy?lang=en"></a>
+                <a class="fas fa-instagram" href="https://instagram.com/artlab_shkola_almaty?igshid=YmMyMTA2M2Y"></a>
+            </div>
+            <form action="" id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" reguired>
+                <input type="text" class="input-field" placeholder="Enter password" reguired>
+                <input type="checkbox" class="checkbox" placeholder="User Id" reguired><span>i agree dcfgvhd</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form action="" id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="checkbox" placeholder="User Id" required><span>i agree drfgh</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+        </div>
+    </div>
+
+    <script> 
+        var x = document.getElementById('login'); 
+        var y = document.getElementById('register'); 
+        var z = document.getElementById('btn'); 
+ 
+        function register() { 
+            x.style.left = '-400px'; 
+            y.style.left = '50px'; 
+            z.style.left = '110px'; 
+        } 
+        function login() { 
+            x.style.left = '100px'; 
+            y.style.left = '-320px'; 
+            z.style.left = '-10px'; 
+        } 
+ 
+    </script>
+
+</body>
+</html>

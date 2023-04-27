@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>artlab</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <link rel="stylesheet" href="@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');">
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <script src="https://codet.jquery.com/jquery-3.4.1.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <script>
+    $(document).ready(function(){
+      $('#icon').click(function(){
+        $('ul').toggleClass('show');
+      });
+    });
+  </script>  
+
+    <nav>
+        <img id="#home" src="./image/logo.png" width="145" height="125" class="logo">
+
+
+        <ul class="links">
+            <li>
+              <a class="home1" href="./index.html">Home</a>
+            </li>
+            <li>
+              <a class="about1" href="./video.html">About us</a>
+            </li>
+            <li>
+              <a class="classes1" href="./classes.html">Classes</a>
+            </li>
+            <li>
+              <a class="teachers1" href="./teachers.html">Teachers</a>
+            </li>
+            <li>
+              <a class="contact1" href="#footer">Contact us</a>
+            </li>
+        </ul>
+        <!--<label id="icon">
+          <i class="fas fa-bars"></i>
+      </label>-->
+    </nav>
+
+<script>
+  //Dark
+var icon = document.getElementById("icon");
+        var text = document.getElementById("textcolor");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")){
+        icon.src = "image/sun.png";
+        text.style.color = '#fff';
+    } else{
+        icon.src = "image/moon.png";
+        text.style.color = '#000';
+    }
+}
+</script>
+
+  <section class="home" id="home">
+
+      <div class="container">
+        <div class="content">
+          <h3>
+            Play & Learn How To<br> Create New Things
+          </h3>
+          <p>Get your kids excited about discovering something<br>new by disguising the learning activities as fun time.</p>
+          <div class="header-btn">
+            <a class="zapis_btn" href="./enroll.html">Enroll</a>
+            <a class="uznat_btn" href="./classes.html">Discover more</a>
+        </div>
+      </div>
+
+      <img src="./image/home.png" width="700px" alt="" class="main-img">
+      
+      </div>
+
+  </section>
+
+   <section class="icons-container">
+
+
+      <div class="cloud-img">
+        <img src="./image/cloud1.png" style="width: 100%;">
+      </div>
+      
+
+
+      <div class="icons" >
+          <img src="./image/icon1.png" alt="" width="130" height="130">
+          <div class="info">
+              <h3>ACTIVE LEARNING</h3>
+              <p>We provide year-round full<br>
+                and parttime education in the<br>
+               Boston Metro Area for<br>
+               infants</pS>
+          </div>
+      </div>
+      <div class="icons">
+          <img src="./image/icon2.png" alt="" width="130" height="130">
+          <div class="info">
+              <h3>EXPERT TEACHERS</h3>
+              <p>Teachers plan an curriculum<br>
+                 is engaging, challenging and<br>
+                 directed toward learning<br>
+                 outcomes. </p>
+         </div>
+      </div>
+      <div class="icons">
+          <img src="./image/icon3.png" alt="" width="130" height="130">
+          <div class="info">
+              <h3>STRATEGI LOCATION</h3>
+              <p>We are situated in Hanoi with<br>
+                a half acer of private bulding<br>
+                with morden aminity &<br>
+                security guard.</p>
+          </div>
+      </div>
+      <div class="icons">
+          <img src="./image/icon4.png" alt="" width="130" height="130">
+          <div class="info">
+              <h3>FULL DAY PROGRAMS</h3>
+              <p>Full Day Program meets<br>
+                Monday through Friday.<br>
+                Operating hours are from<br>
+                7am to 6pm.</p>
+          </div>
+      </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="first-photo">
+      <img src="./image/about.png" width="500px" height="550px">
+    </div>
+
+    <div class="content">
+      <h3>
+        About ARTLAB
+      </h3>
+      <p>
+          All our preschools have all-weather indoor play areas, an art studio<br>
+          or an atelier, technology corners and much else; and most have<br>
+          outdoor play spaces and even swimming pools specifically for the<br>
+          younger ones. Our programs ensure that children in our care<br>
+          everywhere have access to the highest quality of international.
+      </p>
+
+      <ul class="texts">
+        <li>Individual attention in a small-class setting</li>
+        <li>Educational field trips and school presentations</li>
+        <li>Positive learning environment for your child</li>
+      </ul>
+      
+      <a href="./video.html" class="btn2">Learn more</a>
+
+      
+  </div>
+  </section>
+
+  <div class="blue-clouds">
+  <img src="./image/cloud2.png" width="100%">
+ </div>
+
+
+  <section class="activities">
+    <div class="our">
+      <h3>Our Activities</h3>
+    </div>
+
+    <div class="act-photos">
+      <div class="photos">
+        <img src="./image/activ1.png" alt="" width="310" height="340">
+        <div class="mat">
+            <h3>CREATIVE ACTIVITIES</h3>
+            <p>Help developing your child's<br>
+              creativity and social skills. </p>
+       </div>
+    </div>
+    <div class="photos">
+        <img src="./image/activ2.png" alt="" width="310" height="340">
+        <div class="mat">
+            <h3>SPORTS & PLAYING</h3>
+            <p>Sports game for kids that help<br>
+              kids channel all the energy.</p>
+        </div>
+    </div>
+    <div class="photos">
+        <img src="./image/activ3.png" alt="" width="310" height="340">
+        <div class="mat">
+            <h3>E-LEARNING MEDIA</h3>
+            <p>Provides services and products<br>
+              developed for education.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="cloud-img1">
+    <img src="./image/cloud1.png" width="100%">
+  </div>
+
+  <section class="our-gallery">
+     <h3>Our gallery</h3>
+     <div class="full-img" id="fullImgBox">
+      <img src="./img1.jpg" id="fullImg">
+      <span onclick="closeFullImg(this.src)">X</span>
+  </div>
+
+  <div class="img-gallery">
+      <img src="./image/the-new-york-public-library-uzdjHHwyeFY-unsplash 1 (1).png" onclick="openFullImg(this.src)">
+      <img src="./image/gallery2.png" onclick="openFullImg(this.src)" style="margin-top: 70px;">
+      <img src="./image/gallery 3.png" onclick="openFullImg(this.src)">
+      <img src="./image/photo4.png" onclick="openFullImg(this.src)" style="margin-top: 70px;">
+      <img src="./image/photo5.png" onclick="openFullImg(this.src)">
+      <img src="./image/photo6.png" onclick="openFullImg(this.src)">
+      <img src="./image/photo7.png" onclick="openFullImg(this.src)"  style="margin-top: 70px;">
+      <img src="./image/photo8.png" onclick="openFullImg(this.src)">
+      <img src="./image/photo9.png" onclick="openFullImg(this.src)"  style="margin-top: 70px;">
+      <img src="./image/photo10.png" onclick="openFullImg(this.src)">
+  </div>
+
+  <script>
+    var fullImgBox=document.getElementById("fullImgBox");
+    var fullImg=document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display="flex";
+        fullImg.src=pic;
+    }
+
+    function closeFullImg(){
+        fullImgBox.style.display="none"
+    }
+</script>
+<div class="parent-topic">
+  <h3>What Parents Say</h3>
+</div>
+
+
+<main>
+  <section class="review-container">
+    <article class="review">
+      <div class="img-container">
+        <img src="./image/peop.png" id="person-img" alt="" />
+      </div>
+      <h4 id="author">Susan Smith</h4>
+      <p id="info">
+        
+This is my first time to consult in this hospital and I’m lucky I got a perfect doctor who takes care of me since day one of my consultation, until the day of my surgery. 
+      </p>
+      <!-- prev next buttons-->
+      <div class="button-container">
+        <button class="prev-btn">
+          <img src="./image/btn1.png" alt="btn">
+        </button>
+        <button class="next-btn">
+          <img src="./image/btn2.png" alt="btn">
+        </button>
+      </div>
+    </article>
+  </section>
+</main>
+
+  <script>
+    const reviews = [
+  {
+    id: 1,
+    name: 'Susan Smith',
+    img: 'https://images2.imgbox.com/e0/57/qI5bbwvg_o.jpeg',
+    text: "This is my first time to consult in this hospital and I’m lucky I got a perfect doctor who takes care of me since day one of my consultation, until the day of my surgery",
+  },
+  {
+    id: 2,
+    name: 'Anna Johnson',
+    img: 'https://images2.imgbox.com/2e/6e/JAMvTZ56_o.jpeg',
+    text: 'Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.',
+  },
+  {
+    id: 3,
+    name: 'Peter Jones',
+    img: 'https://images2.imgbox.com/56/88/oJvFN3l5_o.jpeg',
+    text: 'Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.',
+  },
+  {
+    id: 4,
+    name: 'Bill Anderson',
+    img: 'https://images2.imgbox.com/8b/1c/vwWNTsCd_o.jpeg',
+    text: 'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
+  },
+];
+// select items
+const img = document.getElementById('person-img');
+const author = document.getElementById('author');
+const info = document.getElementById('info');
+
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+// set starting item
+let currentItem = 0;
+
+// load initial item
+window.addEventListener('DOMContentLoaded', function () {
+  const item = reviews[currentItem];
+  img.src = item.img;
+  author.textContent = item.name;
+  info.textContent = item.text;
+});
+
+// show person based on item
+function showPerson(person) {
+  const item = reviews[person];
+  img.src = item.img;
+  author.textContent = item.name;
+  info.textContent = item.text;
+}
+// show next person
+nextBtn.addEventListener('click', function () {
+  currentItem++;
+  if (currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  showPerson(currentItem);
+});
+// show prev person
+prevBtn.addEventListener('click', function () {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showPerson(currentItem);
+});
+
+  </script>
+  </section>
+
+
+<!-------------------footer----------------------->
+<section class="footer-section" id="footer">
+  <div class="row">
+      <div class="col-md-3">
+          <h3 class="footer-title"><span class="footer-title-text">Userful Links</span><span class="footer-title-underline"></span></h3>
+          <ul class="quick-link-list">
+              <li><a href="#home"> Home</a></li>
+              <li><a href="#">  FAQ</a></li>
+              <li><a href="#">  Gallery</a></li>
+              <li><a href="#"> Membership</a></li>
+              <li><a href="#"> Education</a></li>
+              <li><a href="#"> Service</a></li>
+          </ul>
+      </div>
+      <div class="col-md-3">
+          <h3 class="footer-title title-transparent">Userful Links</h3>
+          <ul class="quick-link-list">
+              <li><a href="#"> Courses</a></li>
+              <li><a href="#"> About us</a></li>
+              <li><a href="#"> Blog</a></li>
+              <li><a href="#"> Contact us</a></li>
+              <li><a href="#"> Our teacher</li>
+              <li><a href="#"> Feedback</a></li>
+          </ul>
+      </div>
+      <div class="col-md-3">
+          <h3 class="footer-title title-transparent">Userful Links</h3>
+          <ul class="quick-link-list">
+              <li><a href="#"> Donation</a></li>
+              <li><a href="#"> Future Plan</a></li>
+              <li><a href="#"> Feedback</a></li>
+              <li><a href="#"> Site Map</a></li>
+              <li><a href="#"> Contact Us</a></li>
+          </ul>
+      </div>
+      <div class="col-md-3">
+          <h3 class="footer-title"><span class="footer-title-text">Connect Us</span><span class="footer-title-underline"></span></h3>
+          <p class="newsletter">Taraz, Pushkina 154<br>+7 705 968 21 88<br>+7 747 206 12 05 </p>
+          <a href="./signup.html" class="btn3">Sign up</a>
+          </form>
+          <div id="social">
+            <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/artlabAlmaty"></a>
+            <a class="twitterBtn smGlobalBtn" href="https://twitter.com/artlab_vandy?lang=en"></a>
+            <a class="youtubeBtn smGlobalBtn" href="https://instagram.com/artlab_shkola_almaty?igshid=YmMyMTA2M2Y"></a>
+
+        </div>
+    </div>
+</div>
+</div>
+</section>
+<section class="footer-section-bottom">
+<div class="container">
+<div class="row">
+    <div class="col-md-6 footer-bottom-left">
+        <p>© Create by Abdirazak Aiganym & Rysbai Zhanel</p>
+    </div>
+</div>
+</div>
+</section>
+
+</body>
+</html>
